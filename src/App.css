@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Nunito:wght@300&family=Patrick+Hand&family=Rubik:wght@300&family=Supermercado+One&family=Varela+Round&display=swap');
+
+*{
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
+  
+}
+body{
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding:0;
+
+}
+.container{
+    background: linear-gradient(to right bottom, #ff9980, #e45e36);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+}
+.box{
+  background-color:  rgb(20, 1, 46);
+  min-width: 400px;
+  min-height: 650px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 3px 6px 40px black;
+  margin-bottom: 10px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 256px;
+  margin: 0 auto;
+
+  
+}
+.keys{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: minmax(80px,auto);
+
+
+}
+input[type="text"]{
+  height: 170px;
+  width: 331px;
+  background-color:  rgb(20, 1, 46);
+  border: 0px;
+  color: #ffffff;
+  text-align: right;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#clear{
+  grid-column: 1/3;
+  grid-row: 1;
+  color: #262834;
+}
+
+#result{
+  grid-column: 3/5;
+  grid-row: 5;
+  color: #262834;
+
+}
+#remove{
+  color:#262834;
+}
+button{
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #2b2f42;
+  color: #ffffff;
+  font-weight: 550;
+  font-size: 25px;
+
+}
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+
+}
+.highlight{
+  background: #56cbdb;
+}
+.Heading{
+  color: #ffffff;
+  font-size: 35px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  float: left;
+
+}
