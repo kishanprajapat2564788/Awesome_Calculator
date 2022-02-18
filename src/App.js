@@ -34,7 +34,7 @@ function App() {
         </form>
         <div className="keys">
           <button className="highlight" onClick={clearHandle} id="clear">Clear</button>
-          <button className="highlight" onClick={RemoveHandle} id="remove">C</button>
+          <button className="highlight" onClick={RemoveHandle} id="remove"><i style={{fontSize:"25px"}} class="bi bi-backspace-fill"></i></button>
           <button className="highlight" name="/" onClick={handleClick}>&divide;</button>
           <button name="7" onClick={handleClick}>7</button>
           <button name="8" onClick={handleClick}>8</button>
